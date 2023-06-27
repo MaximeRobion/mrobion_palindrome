@@ -27,5 +27,9 @@ class TestMrobionPalindrome < Minitest::Test
   def test_integer_palindrome
     assert 12321.palindrome?
   end
+
+  def test_empty_string_non_palindrome
+    refute "".palindrome?
+  end
 end
 

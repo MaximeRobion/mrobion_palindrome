@@ -3,7 +3,7 @@ require_relative "mrobion_palindrome/version"
 module MrobionPalindrome
 
     def palindrome?
-      processed_content == processed_content.reverse
+      processed_content == processed_content.reverse && processed_content.length != 0
     end
 
     private
